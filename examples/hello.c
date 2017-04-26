@@ -9,7 +9,7 @@ static void *callback(enum mg_event event,
   if (event == MG_NEW_REQUEST) {
     char content[1024];
     int content_length = snprintf(content, sizeof(content),
-                                  "Hello from mongoose! Remote port: %d",
+                                  "Hello you mongoosian fool from mongoose! Remote port: %d",
                                   request_info->remote_port);
     mg_printf(conn,
               "HTTP/1.1 200 OK\r\n"
